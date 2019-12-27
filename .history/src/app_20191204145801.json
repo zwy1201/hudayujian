@@ -20,30 +20,30 @@
     "list": [{
       "text": "首页",
       "pagePath": "pages/index/main",
-      "iconPath": "static/tabs/home.png",
-      "selectedIconPath": "static/tabs/home-active.png"
+      "iconPath": "static/images/home.png",
+      "selectedIconPath": "static/images/home-active.png"
     }, {
       "text": "订单",
       "pagePath": "pages/logs/main",
-      "iconPath": "static/tabs/orders.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
+      "iconPath": "static/images/orders.png",
+      "selectedIconPath": "static/images/orders-active.png"
     },{
       "text": "订单",
       "pagePath": "pages/logs/main",
-      "iconPath": "static/tabs/orders.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
+      "iconPath": "static/images/orders.png",
+      "selectedIconPath": "static/images/orders-active.png"
     }],
 
     "items": [{
       "name": "首页",
       "pagePath": "pages/index/main",
-      "icon": "static/tabs/home.png",
-      "activeIcon": "static/tabs/home-active.png"
+      "icon": "static/images/home.png",
+      "activeIcon": "static/images/home-active.png"
     }, {
       "name": "订单",
       "pagePath": "pages/logs/main",
-      "icon": "static/tabs/orders.png",
-      "activeIcon": "static/tabs/orders-active.png"
+      "icon": "static/images/orders.png",
+      "activeIcon": "static/images/orders-active.png"
     }],
     "position": "bottom"
   }
