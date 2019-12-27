@@ -1,5 +1,5 @@
 {
-    "navigationBarTitleText": "湖大遇见",
+    "navigationBarTitleText": "查看启动日志"
     "usingComponents": {
     "i-grid": "../../../static/dist/grid/index",
     "i-grid-item": "../../../static/dist/grid-item/index",
