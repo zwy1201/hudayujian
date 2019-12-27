@@ -61,10 +61,10 @@ export default {
      title_name:"空闲",
      grids:[
        
-            {title:"小黄车",image:"/static/images/1.png"},
-            {title:"小蓝车",image:"/static/images/2.png"},
-            {title:"摩拜",image:"/static/images/3.png"},
-            {title:"租八戒电动车",image:"/static/images/4.png"}
+            {title:"小黄车",image:"/static/images/1.png",}
+            title:"小蓝车",image:"/static/images/2.png",
+            title:"摩拜",image:"/static/images/3.png",
+            title:"租八戒电动车",image:"/static/images/4.png"
        
      ]
       
