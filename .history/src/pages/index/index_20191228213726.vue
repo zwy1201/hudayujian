@@ -57,13 +57,26 @@ export default {
        
             {title:"小黄车",image:"/static/images/1.png",url:'../list/main?type=1'},
             {title:"小蓝车",image:"/static/images/2.png",url:'../list/main?type=2'},
-            {title:"摩拜",image:"/static/images/3.png",url:'../list/main?type=3'},
-            {title:"租八戒电动车",image:"/static/images/4.png",url:'../list/main?type=4'}
+            {title:"摩拜",image:"/static/images/3.png",url:'../list/main?type=1'},
+            {title:"租八戒电动车",image:"/static/images/4.png",url:'../list/main?type=1'}
        
      ],
-     recommand: top
+     top:[
+       {name:"编号1",address:"地址1",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍1" },
+       {name:"编号2",address:"地址2",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍2" },
+       {name:"编号3",address:"地址3",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍3" },
+       {name:"编号4",address:"地址4",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍4" }
+     ],
+      imgUrls: [
+      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
+      'https://images.unsplash.com/photo-1551214021-84f95e060dee?w=640',
+      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
+    ],
+    indicatorDots: false,
+    autoplay: false,
+    interval: 5000,
+    duration: 1000
     }
-   
   },
 
   components: {
@@ -71,9 +84,6 @@ export default {
   },
 
   methods: {
-    goList (url) {
-      mpvue.navigateTo({ url })
-    },
     goType(type){
         console.log(type)
         let url = '../list/main?type=' + type.title
