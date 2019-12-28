@@ -1,40 +1,61 @@
-	<template>
-                <div>
-<swiper
+<template>
+  <div>
+     <swiper
       :indicator-dots="indicatorDots"
         :autoplay="autoplay" 
         :interval="interval" 
         :duration="duration"
         >
-<block v-for="img in imgUrls" :key="img">
+        <block v-for="img in imgUrls" :key="img">
           <swiper-item>
             <image :src="img" style="width：100%" />
           </swiper-item>
         </block>
       </swiper>
-
-	   <i-grid i-class="no-border">
-    <i-grid-item  @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
+    <i-grid i-class="no-border">
+    <i-grid-item @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
         <i-grid-icon>
             <image :src="grid.image" />
         </i-grid-icon>
         <i-grid-label>{{grid.title}}</i-grid-label>
     </i-grid-item>
-</i-grid>
+    
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="/static/images/2.png" />
+        </i-grid-icon>
+        <i-grid-label>小蓝车</i-grid-label>
+    </i-grid-item>
 
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="/static/images/3.png" />
+        </i-grid-icon>
+        <i-grid-label>摩拜</i-grid-label>
+    </i-grid-item>
+
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="/static/images/4.png" />
+        </i-grid-icon>
+        <i-grid-label>租八戒电动车</i-grid-label>
+    </i-grid-item>
+    </i-grid>
 
  <i-panel ：title="title_name">
     <view style="padding: 15px;">
-       <i-card  v-for="item in top" :key="item" i-class="split" :extra="item.name" :thumb="item.iamge">
+      
+      <i-card  v-for="item in top" :key="item" i-class="split" :extra="item.name" :thumb="item.iamge">
     <view slot="content">{{item.remark}}</view>
     <view slot="footer">{{item.address}}</view>
 </i-card>
-      
+ 
     </view>
 </i-panel>
-</div>
-</template>
 
+
+    </div>
+</template>
 
 <script>
 
@@ -97,4 +118,3 @@ div >>> .split{
   margin-bottom:10pt;
 }
 </style>
-

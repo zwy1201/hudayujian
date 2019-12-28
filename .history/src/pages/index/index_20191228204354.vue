@@ -1,26 +1,38 @@
-	<template>
-                <div>
-<swiper
+<template>
+  <div>
+     <swiper
       :indicator-dots="indicatorDots"
         :autoplay="autoplay" 
         :interval="interval" 
         :duration="duration"
         >
-<block v-for="img in imgUrls" :key="img">
+        <block v-for="grid in grids" :key="grid" i-class="no-border">
+           <i-grid-icon>
+            <image :src="grid.image" />
+        </i-grid-icon>
+  <i-grid-label>{{grid.title}}</i-grid-label>
+
           <swiper-item>
-            <image :src="img" style="width：100%" />
+            <image :src="item" style="width：100%" />
           </swiper-item>
         </block>
       </swiper>
-
-	   <i-grid i-class="no-border">
-    <i-grid-item  @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
+    <i-grid i-class="no-border">
+    <i-grid-item @click="goList(item.url)" i-class="no-border" v-for="item in grids"  :key="item" >
         <i-grid-icon>
-            <image :src="grid.image" />
+            <image :src="item.img" />
         </i-grid-icon>
-        <i-grid-label>{{grid.title}}</i-grid-label>
+        <i-grid-label>{{item.type}}</i-grid-label>
     </i-grid-item>
-</i-grid>
+    </i-grid>
+
+
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="/static/images/1.png" />
+        </i-grid-icon>
+        <i-grid-label>小黄车</i-grid-label>
+    </i-grid-item>
 
 
  <i-panel ：title="title_name">
@@ -32,9 +44,10 @@
       
     </view>
 </i-panel>
-</div>
-</template>
 
+
+    </div>
+</template>
 
 <script>
 
@@ -97,4 +110,3 @@ div >>> .split{
   margin-bottom:10pt;
 }
 </style>
-
