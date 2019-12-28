@@ -1,7 +1,7 @@
 <template>
-  <div style="width: 100%; height: 100%;">
+  <div style="width: ">
    <map 
-id="map"  scale="14"  :markers="markers"  show-location style="width: 100%; height: 100%;"></map>
+id="map"  scale="14"  :markers="markers"  show-location style="width: 100%; height: 100;"></map>
     </div>
 </template>
 
@@ -38,7 +38,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 body, html {
 height:100%
 }
