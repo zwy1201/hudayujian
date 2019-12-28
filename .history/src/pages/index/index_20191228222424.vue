@@ -99,3 +99,8 @@ div >>> .split{
 </style>
 
 
+   	 <view style="padding: 15px;">
+    	  <i-card  v-for="item in top" :key="item" i-class="split" :extra="item.name" :thumb="item.iamge">
+    	<view slot="content">{{item.remark}}</view>
+    	<view slot="footer">{{item.address}}</view>
+	</i-card>
