@@ -14,7 +14,7 @@
       </swiper>
 
 	   <i-grid i-class="no-border">
-    <i-grid-item @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
+    <i-grid-item  @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
         <i-grid-icon>
             <image :src="grid.image" />
         </i-grid-icon>

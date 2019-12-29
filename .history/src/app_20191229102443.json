@@ -39,12 +39,7 @@
       "pagePath": "pages/index/main",
       "icon": "static/images/home.png",
       "activeIcon": "static/images/home-active.png"
-    }, {
-      "name": "空闲",
-      "pagePath": "pages/logs/main",
-      "icon": "static/images/5.png",
-      "activeIcon": "static/images/6.png"
-    }],
+    }, ,
     "position": "bottom"
   }
 }

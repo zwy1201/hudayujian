@@ -40,10 +40,10 @@
       "icon": "static/images/home.png",
       "activeIcon": "static/images/home-active.png"
     }, {
-      "name": "空闲",
+      "name": "订单",
       "pagePath": "pages/logs/main",
       "icon": "static/images/5.png",
-      "activeIcon": "static/images/6.png"
+      "activeIcon": "static/images/orders-active.png"
     }],
     "position": "bottom"
   }

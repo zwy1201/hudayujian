@@ -14,7 +14,7 @@
       </swiper>
 
 	   <i-grid i-class="no-border">
-    <i-grid-item @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
+    <i-grid-item  @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
         <i-grid-icon>
             <image :src="grid.image" />
         </i-grid-icon>
@@ -27,7 +27,7 @@
     <view style="padding: 15px;">
        <i-card  v-for="item in top" :key="item" i-class="split" :extra="item.name" :thumb="item.iamge">
     <view slot="content">{{item.remark}}</view>
-    <view slot="footer">{{item.address}}</view>
+    <view slot="footer">{{item.content}}</view>
 </i-card>
       
     </view>

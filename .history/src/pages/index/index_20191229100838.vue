@@ -14,7 +14,7 @@
       </swiper>
 
 	   <i-grid i-class="no-border">
-    <i-grid-item @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
+    <i-grid-item  @click="goType(grid)" v-for="grid in grids" :key="grid" i-class="no-border">
         <i-grid-icon>
             <image :src="grid.image" />
         </i-grid-icon>
@@ -23,7 +23,7 @@
 </i-grid>
 
 
- <i-panel :title="title_name">
+ <i-panel ：title="title_name">
     <view style="padding: 15px;">
        <i-card  v-for="item in top" :key="item" i-class="split" :extra="item.name" :thumb="item.iamge">
     <view slot="content">{{item.remark}}</view>
@@ -46,10 +46,7 @@ export default {
      title_name:"空闲",
      grids:[
        
-            {title:"小黄车",image:"/static/images/1.png"},
-            {title:"小蓝车",image:"/static/images/2.png"},
-            {title:"摩拜",image:"/static/images/3.png"},
-            {title:"租八戒电动车",image:"/static/images/4.png"}
+   
        
      ],
      top:[
