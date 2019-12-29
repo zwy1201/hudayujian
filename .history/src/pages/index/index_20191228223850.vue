@@ -43,7 +43,7 @@ export default {
   data () {
 
     return {
-     title_name:"空闲",
+
      grids:[
        
             {title:"小黄车",image:"/static/images/1.png"},
@@ -52,12 +52,7 @@ export default {
             {title:"租八戒电动车",image:"/static/images/4.png"}
        
      ],
-     top:[
-       {name:"编号1",address:"地址1",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍1" },
-       {name:"编号2",address:"地址2",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍2" },
-       {name:"编号3",address:"地址3",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍3" },
-       {name:"编号4",address:"地址4",image:"https://i.loli.net/2017/08/21/599a521472424.jpg",remark:"介绍4" }
-     ],
+     
       imgUrls: [
       'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
       'https://images.unsplash.com/photo-1551214021-84f95e060dee?w=640',
@@ -97,4 +92,5 @@ div >>> .split{
   margin-bottom:10pt;
 }
 </style>
+
 

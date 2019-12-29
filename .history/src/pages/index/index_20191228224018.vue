@@ -43,7 +43,7 @@ export default {
   data () {
 
     return {
-     title_name:"空闲",
+
      grids:[
        
             {title:"小黄车",image:"/static/images/1.png"},
@@ -97,4 +97,5 @@ div >>> .split{
   margin-bottom:10pt;
 }
 </style>
+
 
